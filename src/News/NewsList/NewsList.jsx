@@ -4,8 +4,8 @@ import Input from "../Input/Input";
 
 const NewsList = () => {
   const [news, setNews] = useState([]);
-  //   const [search, setSearch] = useState("pakistan");
-  //   const [finalsearch, setFinalSearch] = useState("");
+  const [search, setSearch] = useState("pakistan");
+  const [finalsearch, setFinalSearch] = useState("");
   const NewsData = async () => {
     const url = `https://news-api14.p.rapidapi.com/search?q=pakistan&language=en&pageSize=10`;
     const options = {
